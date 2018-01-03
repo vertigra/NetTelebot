@@ -1,10 +1,8 @@
-﻿using System;
-using NetTelebot.Tests.TypeTestObject;
+﻿using NetTelebot.Tests.TypeTestObject;
 using NetTelebot.Tests.TypeTestObject.ResultTestObject;
 using NetTelebot.Tests.TypeTestObject.StickerObject;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using NUnit.Framework;
 
 namespace NetTelebot.Tests.MockServers
 {
@@ -221,7 +219,6 @@ namespace NetTelebot.Tests.MockServers
         ///  }
         /// }
         /// </summary>
-
         internal static string ExpectedBodyForGetStickerSet { get; } = JsonConvert.SerializeObject(new StickerSetInfoResultObject
         {
             Ok = true,
